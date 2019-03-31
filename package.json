@@ -29,7 +29,36 @@
       "plugin:vue/essential",
       "@vue/prettier"
     ],
-    "rules": {},
+    "rules": {
+      "quotes": [
+        "error",
+        "single",
+        {
+          "avoidEscape": true
+        }
+      ],
+      "indent": [
+        "error",
+        2
+      ],
+      "no-console": 0,
+      "comma-dangle": ["off", {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "never"
+      }],
+      "prettier/prettier": [
+        "error",
+        {
+          "singleQuote": true,
+          "semi": false,
+          "trailingComma": "none",
+          "printWidth": 80
+        }
+      ]
+    },
     "parserOptions": {
       "parser": "babel-eslint"
     }
